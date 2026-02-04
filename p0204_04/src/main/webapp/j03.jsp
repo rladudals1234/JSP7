@@ -15,5 +15,7 @@
 	%>
 	
 	<%= request.getAttribute("nickName") %>
+	<p>${nickName}</p>
+	<p>변수:${a}</p>
 </body>
 </html>
