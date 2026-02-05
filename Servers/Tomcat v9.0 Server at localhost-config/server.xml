@@ -162,9 +162,8 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="p0204_03" path="/p0204_03" reloadable="true" source="org.eclipse.jst.jee.server:p0204_03"/>
       <Context docBase="C:/upload/" path="/p0204_03/upload" reloadable="true"/>
-      <Context docBase="p0205_01" path="/p0205_01" reloadable="true" source="org.eclipse.jst.jee.server:p0205_01"/><Context docBase="p0205_02" path="/p0205_02" reloadable="true" source="org.eclipse.jst.jee.server:p0205_02"/></Host>
+      <Context docBase="p0205_03" path="/p0205_03" reloadable="true" source="org.eclipse.jst.jee.server:p0205_03"/><Context docBase="p0205_02" path="/p0205_02" reloadable="true" source="org.eclipse.jst.jee.server:p0205_02"/><Context docBase="p0205_01" path="/p0205_01" reloadable="true" source="org.eclipse.jst.jee.server:p0205_01"/><Context docBase="p0204_03" path="/p0204_03" reloadable="true" source="org.eclipse.jst.jee.server:p0204_03"/><Context docBase="p0205_04" path="/p0205_04" reloadable="true" source="org.eclipse.jst.jee.server:p0205_04"/><Context docBase="p0205_05" path="/p0205_05" reloadable="true" source="org.eclipse.jst.jee.server:p0205_05"/></Host>
     </Engine>
   </Service>
 </Server>

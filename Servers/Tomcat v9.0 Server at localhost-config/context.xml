@@ -26,16 +26,16 @@
     <!--
     <Manager pathname="" />
     -->
-    
-	<Resource
-		auth="Container"
-		driverClassName="oracle.jdbc.driver.OracleDriver"
-		url="jdbc:oracle:thin:@localhost:1521:xe"
-		username="ora_user"
-		password="1111"
-		name="jdbc/Oracle21"
-		type="javax.sql.DataSource"
-		maxActive="50"
-		maxWait="1000"
-	/>
+    <Resource
+    	auth="Container"
+    	driverClassName="oracle.jdbc.driver.OracleDriver"
+    	url="jdbc:oracle:thin:@localhost:1521:xe"
+    	username="ora_user"
+    	password="1111"
+    	name="jdbc/Oracle21"
+    	type="javax.sql.DataSource"
+    	maxActive="50"
+    	maxWait="1000"
+    />
+	<Resource auth="Container" driverClassName="oracle.jdbc.driver.OracleDriver" maxActive="50" maxWait="1000" name="jdbc/Oracle21" password="1111" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:xe" username="ora_user"/>
 </Context>
