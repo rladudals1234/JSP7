@@ -5,16 +5,14 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.java.www.dao.MemberDao;
-import com.java.www.dto.MemberDto;
+import com.java.www.dao.BoardDao;
+import com.java.www.dto.BoardDto;
 
-public class MemberServiceImpl implements MemberService {
-
+public class BoardServiceImpl implements BoardService {
 	@Override
 	public void execute(HttpServletRequest request, HttpServletResponse response) {
-		MemberDao mdao = new MemberDao();
-		List<MemberDto> list = mdao.memberList();
+		BoardDao bdao = new BoardDao();
+		List<BoardDto> list = bdao.boardList();
 		request.setAttribute("list", list);
 	}
-
 }

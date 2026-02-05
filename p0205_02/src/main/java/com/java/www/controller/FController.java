@@ -10,6 +10,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.java.www.service.BoardService;
+import com.java.www.service.BoardServiceImpl;
 import com.java.www.service.MemberService;
 import com.java.www.service.MemberServiceImpl;
 
@@ -31,6 +33,7 @@ public class FController extends HttpServlet {
 		System.out.println("fileName : "+fileName);
 		
 		MemberService mService = null;
+		BoardService bService = null;
 		
 		if(fileName.equals("/login.do")) {
 			viewPage = "./login.jsp";
@@ -40,6 +43,8 @@ public class FController extends HttpServlet {
 		} else if(fileName.equals("/logout.do")) {
 			viewPage = "./logout.jsp";
 		} else if(fileName.equals("/board.do")) {
+			bService = new BoardServiceImpl();
+			bService.execute(request, response);
 			viewPage = "./board.jsp";
 		} else if(fileName.equals("/member.do")) {
 			mService = new MemberServiceImpl();
